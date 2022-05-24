@@ -51,8 +51,7 @@ dev_dependencies:
   animated_login: ^1.5.1
   flutter_collapsing_toolbar: ^1.0.0
   flutter_menu: ^0.4.1
-  auto_size_text: ^3.0.0
-  responsive_grid: ^2.1.0
+  flutter_form_bloc: ^0.30.1
 
 
 

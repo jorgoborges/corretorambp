@@ -46,8 +46,8 @@ class _HomeMBState extends State<HomeMB> {
                   controller: controller,
                   expandedHeight: 160,
                   collapsedHeight: 64,
-                  decorationForegroundColor: Color(0xff64b5f6),
-                  decorationBackgroundColor: Colors.greenAccent,
+                  decorationForegroundColor: Color(0xff00bfa5),
+                  decorationBackgroundColor: Colors.deepOrange,
                   onCollapsing: (double offset) {
                     setState(() {
                       headerOffset = offset;

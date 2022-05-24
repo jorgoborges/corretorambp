@@ -1,5 +1,5 @@
-import 'package:corretoramb/Home_MB.dart';
 import 'package:flutter/material.dart';
+import 'menu.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Demo mbpseguros',
       theme: ThemeData(
           // This is the theme of your application.
           //
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
 
           ),
-      home: const MyHomePage(title: ' Demo Home Page mbpseguros'),
+      home: const MyHomePage(title: ' Demo APP mbpseguros'),
     );
   }
 }
@@ -60,6 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.deepOrangeAccent,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: FittedBox(
                 fit: BoxFit.fill,
                 child: Image.network(
-                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgESmba4qLwb5r4WshvzieN1_XYnmD7zlmtX5OAPqpGSYg6YkVT_3s_crLwtQrHu3iC2w&usqp=CAU'),
+                    'https://cdn.pixabay.com/photo/2014/07/06/13/55/calculator-385506_960_720.jpg'),
               ),
             ),
           ],
@@ -96,12 +96,13 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.deepOrangeAccent,
         onPressed: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => HomeMB()));
+              context, MaterialPageRoute(builder: (context) => Menu1()));
         },
         child: Text('Avançar',
-            style: TextStyle(fontSize: 10, color: Colors.black)),
+            style: TextStyle(fontSize: 12, color: Colors.white)),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
