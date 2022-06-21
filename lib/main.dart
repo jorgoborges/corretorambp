@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
 
           ),
-      home: const MyHomePage(title: ' Demo APP mbpseguros'),
+      home: const MyHomePage(title: ' Demo Rizzi'),
     );
   }
 }

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_form_bloc/flutter_form_bloc.dart';
 
 import 'cad_dados_enderecos.dart';
+import 'demo_bi.dart';
 
 void main() {
   runApp(const cad_dados_clientes());
@@ -328,7 +329,7 @@ class SuccessScreen extends StatelessWidget {
             SizedBox(height: 11),
             ElevatedButton.icon(
               onPressed: () => Navigator.of(context)
-                  .pushReplacement(MaterialPageRoute(builder: (_) => HomeMB())),
+                  .pushReplacement(MaterialPageRoute(builder: (_) =>Demo_bi())),
               icon: const Icon(Icons.exit_to_app),
               label: const Text('Sair Portal'),
             ),
