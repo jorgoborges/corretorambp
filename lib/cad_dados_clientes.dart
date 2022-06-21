@@ -327,12 +327,7 @@ class SuccessScreen extends StatelessWidget {
               label: const Text('Voltar'),
             ),
             SizedBox(height: 11),
-            ElevatedButton.icon(
-              onPressed: () => Navigator.of(context)
-                  .pushReplacement(MaterialPageRoute(builder: (_) =>Demo_bi())),
-              icon: const Icon(Icons.exit_to_app),
-              label: const Text('Sair Portal'),
-            ),
+
           ],
         ),
       ),
